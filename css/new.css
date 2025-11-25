@@ -1,0 +1,43 @@
+.topBuy {display:flex; align-items:center; border:1px solid #DBB467; min-height:37px; max-height:37px; padding:0 15px; font-weight:normal; font-size:14px; line-height:1em; color:#FFFFFF; text-decoration:none; margin-right:1.5vw; transition:color 0.3s, background 0.3s}
+.topBuy:hover {color:#FFFFFF; background:#DBB467}
+.topBuy svg {min-width:17px; max-width:17px; height:17px; margin:0 0 0 10px; fill:#DBB467; transition:fill 0.3s}
+.topBuy:hover svg {fill:#FFFFFF}
+
+@media screen and (max-width:1330px) {
+    .topBuy {margin-right:0; order:0; flex-direction:row-reverse; justify-content:flex-end}
+    .topBuy svg {margin:0 10px 0 0}
+    .topMenu {order:1}
+    .authorization {order:2}
+    .topMenu {border-top:1px solid #FFFFFF; border-bottom:1px solid #FFFFFF; width:100%; margin:20px 0 0 0; padding-top:var(--indent30)}
+    header.header .top .authorization {border-top:none}
+}
+
+@media screen and (max-width:767px) {
+    .topBuy {width:100%}
+}
+
+.window-size {display:none; position:fixed; left:0; top:0; right:0; bottom:0; overflow:auto; z-index:9999; background:rgba(0, 0, 0, 0.4); text-align:center}
+.window-size-open .window-size {display:block}
+.window-size::after {content:""; display:inline-block; width:0; height:100%; vertical-align:middle}
+.window-size-container {display:inline-block; vertical-align:middle; position:relative; text-align:left; background:#000000; box-shadow:0px 0px 40px rgba(219, 180, 103, 0.1); border-radius:4px}
+.window-size-close {position:absolute; right:0; top:0; width:34px; height:34px; display:flex; align-items:center; justify-content:center}
+.window-size-close svg {width:14px; height:14px; fill:rgba(255, 255, 255, 0.6); transition:fill 0.3s}
+.window-size-close:hover svg {fill:#FFFFFF}
+
+.window-size-content {width:330px; padding:34px 10px 10px 10px}
+.window-size-title {text-align:center; padding:40px 0 60px 0; font-weight:normal; font-size:24px; line-height:1em; color:#FFFFFF}
+.window-size-btns {display:flex; justify-content:space-between}
+.window-size-btns a {display:flex; align-items:center; justify-content:center; min-width:calc(50% - 5px); max-width:calc(50% - 5px); height:48px; font-weight:600; font-size:16px; line-height:1.5em; border-radius:2px; transition:color 0.3s, border-color 0.3s, background 0.3s; text-decoration:none}
+.window-size-btns a.window-size-btn-no {border:1px solid rgba(255, 255, 255, 0.6); color:rgba(255, 255, 255, 0.6)}
+.window-size-btns a.window-size-btn-no:hover {border-color:#FFFFFF; color:#FFFFFF}
+.window-size-btns a.window-size-btn-yes {background:#DBB467; color:#000000; border:1px solid #DBB467}
+.window-size-btns a.window-size-btn-yes:hover {background:#FFFFFF; color:#DBB467}
+
+@media screen and (max-width:1330px) {
+    .window-size-content {width:355px}
+}
+
+.authorization::before {display:none}
+.authorization p {position:relative}
+.authorization p::before {content:""; position:absolute; bottom:0; width:0; height:1px; background-color:#DBB467; transition:width 0.3s}
+.authorization:hover p::before {width:100%}
