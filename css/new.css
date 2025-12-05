@@ -1,3 +1,17 @@
 @media screen and (max-width: 1330px) {
     header.header .top .headerMenu {bottom:0; overflow:auto}
 }
+
+@media screen and (max-width: 1330px) {
+    .authorization {order:0}
+    .topMenu {order:1; padding:0; border-top:none; margin:30px 0 0 0}
+    .topBuy {order:2; margin:20px 0 0 0}
+}
+
+@media screen and (max-width: 980px) {
+    .topMenu {margin:20px 0 0 0}
+}
+
+@media screen and (max-width: 750px) {
+    .topMenu {margin:15px 0 0 0}
+}
