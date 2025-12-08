@@ -3,15 +3,21 @@
 }
 
 @media screen and (max-width: 1330px) {
+    header.header .top .headerMenu {padding-top:30px; padding-bottom:30px}
     .authorization {order:0}
+    header.header .top .authorization {padding-top:0}
     .topMenu {order:1; padding:0; border-top:none; margin:30px 0 0 0}
-    .topBuy {order:2; margin:20px 0 0 0}
+    .topBuy {order:2; margin:30px 0 0 0}
 }
 
 @media screen and (max-width: 980px) {
+    header.header .top .headerMenu {padding-top:20px; padding-bottom:20px}
     .topMenu {margin:20px 0 0 0}
+    .topBuy {margin:20px 0 0 0}
 }
 
 @media screen and (max-width: 750px) {
+    header.header .top .headerMenu {padding-top:15px; padding-bottom:15px}
     .topMenu {margin:15px 0 0 0}
+    .topBuy {margin:15px 0 0 0}
 }
